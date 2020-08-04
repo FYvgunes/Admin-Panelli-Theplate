@@ -6,7 +6,21 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-head-line">AYARLAR PANELİ</h1>
-                        <h1 class="page-subhead-line">Bütün işlemlerinizi bu panel üzerinden yapabilirsiniz </h1>
+
+
+                        <?php 
+                        if($_GET['durum']=="ok"){?>
+                          <h1 style="color:green; font-weight: 700" class="page-subhead-line">Kayıtlarınız başarı ile güncellendi </h1>
+
+                       <?php  } elseif($_GET['durum']=="no") { ?>
+                          <h1 style="color:red; font-weight: 700" class="page-subhead-line">Kayıtlarınız Güncellenemedi</h1>
+
+                          <?php } else{ ?>
+                             <h1 class="page-subhead-line">Ayarlar sekmesinde istediğiniz ayarı değiştirebilirsiniz</h1>
+
+                        <?php } ?>
+
+                        
 
                     </div>
                 </div>
@@ -14,7 +28,7 @@
                 <form action="netting/islem.php" method="post">
                  <div class="form-group">
                    <label>Telefon</label>
-                    <input class="form-control" type="text" name="Ayar_Telefon" value="<?php echo $sonuc['Ayar_Telefon'] ?>">
+                    <input class="form-control" type="text" name="Ayar_Telefon" value="<?php echo $sonuc['Ayar_Telefon'] ?>">a
                   </div>
                    <div class="form-group">
                    <label>Ayar Başlık</label>
