@@ -24,6 +24,34 @@ if(empty($ayarkaydet))
 	}
 
 
+	if(isset($_POST['Login'])){
+		$Admin_Adi=$_POST['Admin_Adi'];
+		$Admin_sifre =$_POST['Admin_sifre'];
+
+
+		if($Admin_Adi && $Admin_sifre)
+		{
+			$sorgula = $conn ->query("SELECT * FROM Admin Where Admin_Adi='$Admin_Adi' and Admin_sifre='$Admin_sifre'", PDO::FETCH_ASSOC);
+			$verisay = $sorgula->rowCount();
+
+
+
+			if($verisay>0)
+			{
+				$_SESSION['Admin_Adi']=$Admin_Adi;
+				header('location:../index.php');
+
+			}
+			else
+			{
+				header('location:../Login.php?Login=no');
+			}
+		}
+
+
+	}
+
+
 
 
  ?>

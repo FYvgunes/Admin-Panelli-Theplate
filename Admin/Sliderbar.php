@@ -1,3 +1,11 @@
+
+<?php 
+include 'netting/Baglan.php';
+session_start();
+$sorgu = $conn ->query("SELECT * FROM Admin");
+$sonuc = $sorgu->fetch(PDO::PARAM_INT);
+
+?>
 <!-- /. NAV TOP  -->
 <nav class="navbar-default navbar-side" role="navigation">
     <div class="sidebar-collapse">
@@ -7,7 +15,7 @@
                     <img src="assets/img/user.png" class="img-thumbnail" />
 
                     <div class="inner-text">
-                        Jhon Deo Alex
+                     Hoşgeldin <?php  echo $_SESSION['Admin_adi']; ?>
                         <br />
                         <small>Last Login : 2 Weeks Ago </small>
                     </div>

@@ -3,7 +3,7 @@
 include 'Admin/netting/Baglan.php';
 
 $sorgu = $conn ->query("SELECT * FROM Ayarlar");
-$sonuc = $sorgu->fetch_assoc();
+$sonuc = $sorgu->fetch(PDO::PARAM_INT);
 
 ?>
 

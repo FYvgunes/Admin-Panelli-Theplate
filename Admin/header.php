@@ -1,6 +1,6 @@
 <?php 
 include 'netting/Baglan.php';
-
+session_start();
 $sorgu = $conn ->query("SELECT * FROM Ayarlar");
 $sonuc = $sorgu->fetch(PDO::PARAM_INT);
 

@@ -1,6 +1,6 @@
 <?php include 'header.php'; 
  include'Sliderbar.php';
-if(!isset($_SESSION['kadi'])){
+if(!isset($_SESSION['Admin_adi'])){
     header('location:Login.php');
 }
 
