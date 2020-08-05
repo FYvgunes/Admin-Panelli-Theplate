@@ -1,5 +1,9 @@
-<?php include 'header.php'; ?>
-<?php include'Sliderbar.php'; ?>
+<?php
+include 'header.php'; 
+include'Sliderbar.php'; 
+
+
+?>
 
 <div id="page-wrapper">
   <div id="page-inner">
