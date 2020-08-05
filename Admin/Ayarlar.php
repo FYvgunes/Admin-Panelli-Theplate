@@ -1,4 +1,5 @@
 <?php
+
 include 'header.php'; 
 include'Sliderbar.php'; 
 
@@ -29,7 +30,7 @@ include'Sliderbar.php';
      </div>
    </div>
    <div class="col-md-6">
-    <form action="netting/islem.php" method="post">
+    <form action="netting/islem.php" method="POST">
      <div class="form-group">
        <label>Telefon</label>
        <input class="form-control" type="text" name="Ayar_Telefon" value="<?php echo $sonuc['Ayar_Telefon'] ?>">
