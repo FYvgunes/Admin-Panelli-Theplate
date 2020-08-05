@@ -3,9 +3,8 @@ session_start();
 
 include 'netting/Baglan.php';
 
-
-
-$sorgu = $conn->query("SELECT * FROM Ayarlar")->fetch(PDO::FETCH_ASSOC);
+$sorgu = $conn ->query("SELECT * FROM Ayarlar");
+$sonuc = $sorgu->fetch(PDO::PARAM_INT);
 
 ?>
 

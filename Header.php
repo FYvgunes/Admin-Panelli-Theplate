@@ -11,7 +11,7 @@ $sonuc = $sorgu->fetch(PDO::PARAM_INT);
 <html lang="en">
 <head>
   <title><?php echo $sonuc['Ayar_Title']; ?></title>
-  <meta name="description" content="<?php echo $sonuc['Aya_Description  '] ?>">
+  <meta name="description" content="<?php echo $sonuc['Aya_Description'] ?>">
   <meta name="keywords" content="Tamirci Themlate uygulama yaparak php öğreniyorum ">
   <meta name="author" content="Veysel GÜneş">
   <meta charset="utf-8">
